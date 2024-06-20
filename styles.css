@@ -77,13 +77,15 @@ html, body {
     padding: 30px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.6);
-    width: 50%;
+    width: 80%;
 }
 .table-price, .table-price th, .table-price td {
     border: 2px solid black;
     border-collapse: collapse;
     padding: 5px;
-    width: 50%;
+}
+.table-price th {
+    width: 33%;
 }
 .table-price caption {
     background-color: black;
