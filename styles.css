@@ -5,6 +5,8 @@
 }
 html, body {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .header {
     background-color: black;
@@ -30,6 +32,7 @@ html, body {
     background-color: hsl(0, 0%, 85%);
     width: 100%;
     text-align: center;
+    height: 100%;
 }
 .background {
     background-image: url(./images/background.jpg);
@@ -45,6 +48,7 @@ html, body {
 }
 .bold {
     font-weight: 900;
+    height: 18px;
 }
 .size-18px {
     font-size: 18px;
@@ -52,15 +56,18 @@ html, body {
 .card {
     position: relative;
     width: 70vw;
+    height: auto;
 }
 .card-image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .card-text {
     position: absolute;
     top: 0;
     width: 100%;
+    font-size: 18px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
@@ -70,11 +77,13 @@ html, body {
     padding: 30px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.6);
+    width: 50%;
 }
 .table-price, .table-price th, .table-price td {
     border: 2px solid black;
     border-collapse: collapse;
-    padding: 10px;
+    padding: 5px;
+    width: 50%;
 }
 .table-price caption {
     background-color: black;
@@ -95,19 +104,23 @@ html, body {
 .form-subscribe {
     width: 50%;
 }
+.form-email {
+    border: none;
+}
 @media (768px <= width) {
     .header h1,.header nav {
         padding: 20px;
     }
     .banner {
-        height: 20vh;
+        height: 15vh;
     }
     .main {
         flex-grow: 1;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-around;
+        align-items: normal;
+        
     }
     .main p {
         width: 100vw;
@@ -117,15 +130,33 @@ html, body {
         width: 100vw;
     }
     .card {
-        width: 30%;
-        height: 30%;
-        
+        width: 240px;
+        height: 240px;
     }
+
     .footer {
         display: flex;
-        
+        flex-direction: row;
+        justify-content: space-around;
+        height: 10vh;
+    }
+    .card-gray {
+        width: 450px;
+        margin: 10px;
+    }
+    .table-price, .table-price th, .table-price td {
+        padding: 1px;
+        width: 450px;
+        margin: 10px;
     }
     .form-subscribe {
-        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+    .form-subscribe label {
+        padding: 10px;
+    }
+    .form-subscribe button {
+        margin: 10px;
     }
 }

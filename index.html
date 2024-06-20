@@ -13,14 +13,14 @@
     <header class="header">
         <h1 class="text-white"><span class="text-red">JP</span>Travelers</h1>
         <nav>
-            <a class="button text-white" href="#" class="button">Home</a>
-            <a class="button text-white" href="#" class="button">Travels</a>
-            <a class="button text-white" href="#" class="button">Buy Packs</a>
+            <a class="button text-white" href="#">Home</a>
+            <a class="button text-white" href="#">Travels</a>
+            <a class="button text-white" href="#">Buy Packs</a>
         </nav>
         <img class="banner" src="./images/banner.jpg" alt="image banner">
     </header>
     <main class="main background">
-        
+
         <h2 class="tittle-gray">Choose your <span class="text-red">best travel</span> option!</h2>
         <p class="bold size-18px">More information about your options:</p>
         <div class="card">
@@ -74,16 +74,19 @@
         <form class="text-white form-subscribe" action="./show_data.html" method="get">
             <fieldset>
                 <legend>Have your already traveled with us?</legend>
-                <label for="client">Yes
+                <label for="yes">Yes
                     <input type="radio" name="client" id="yes" value="yes">
                 </label>
-                <label for="client">No
+                <label for="no">No
                     <input type="radio" name="client" id="no" value="no">
                 </label>
-                <label for="email">Subscribe:
-                    <input type="email" name="email" id="email" required>
-                </label>
-                <button type="submit">Send</button>
+                <fieldset class="form-email">
+                    <label class="form-email" for="email">Subscribe:
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <button type="submit">Send</button>
+                </fieldset>
+
             </fieldset>
         </form>
         <span class="text-white">jptravelers@gmail.com</span>
