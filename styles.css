@@ -74,15 +74,20 @@ html, body {
     font-weight: 900;
 }
 .card-gray {
-    padding: 30px;
+    padding: 10px 30px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.6);
     width: 90%;
+    display: inline-block;
+    height: 120px;
+}
+.table-price {
+    display: table;
 }
 .table-price, .table-price th, .table-price td {
     border: 2px solid black;
     border-collapse: collapse;
-    padding: 5px;
+    padding: 2px;
 }
 .table-price th {
     width: 33%;
@@ -102,7 +107,6 @@ html, body {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 14vh;
 }
 .form-subscribe {
     width: 50%;
@@ -110,9 +114,10 @@ html, body {
 .form-email {
     border: none;
 }
+
 @media (768px <= width) {
     .header h1,.header nav {
-        padding: 20px;
+        padding: 10px;
     }
     .banner {
         height: 14vh;
@@ -133,28 +138,27 @@ html, body {
         width: 100vw;
     }
     .card {
-        width: 240px;
-        height: 240px;
+        width: 200px;
+        height: 200px;
     }
 
     .footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        height: 14vh;
     }
     .card-gray {
-        width: 450px;
-        margin: 10px;
+        width: 350px;
+        margin: 0 0 10px 0;
     }
     .table-price, .table-price th, .table-price td {
         padding: 1px;
-        width: 450px;
-        margin: 10px;
+        
     }
     .form-subscribe {
         display: flex;
         justify-content: center;
+        margin: 10px;
     }
     .form-subscribe label {
         padding: 10px;
